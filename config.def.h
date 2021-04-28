@@ -79,6 +79,8 @@ static const char *termcmd[]  = { "alacritty", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	/*{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },*/
+
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("rofi -show run") },
 	{ MODKEY,                       XK_u,      spawn,          {.v = browsercmd } },
     { MODKEY,                       XK_o,      spawn,          {.v = fmcmd } },
